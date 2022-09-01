@@ -1,0 +1,32 @@
+{
+  "plugins": ["prettier"],
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": false,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "./src"]],
+        "extensions": [".js"]
+      }
+    }
+  }
+}
